@@ -7,7 +7,7 @@ on:
 
 jobs:
   Initiator:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Fetch PR details
         shell: bash
@@ -27,6 +27,7 @@ jobs:
 
 
   PR-verifier:
+  
     uses: amalx-ssrc/tii_sel4_build_test/.github/workflows/pr-verifier-2.yml@tii/development-test
     with: 
       branch: ${{ github.head_ref }}
