@@ -31,3 +31,4 @@ jobs:
     uses: amalx-ssrc/tii_sel4_build_test/.github/workflows/pr-verifier-2.yml@tii/development-test
     with: 
       branch: ${{ github.head_ref }}
+      JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
