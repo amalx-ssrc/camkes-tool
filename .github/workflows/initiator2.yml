@@ -7,7 +7,7 @@ on:
 
 jobs:
   Initiator:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Fetch PR details
         shell: bash
