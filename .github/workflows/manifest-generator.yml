@@ -6,10 +6,11 @@ on:
       - opened
       - edited
       - reopened
+      - labeled
 
 jobs:
   Manifest-Generator:
-    uses: amalx-ssrc/tii_sel4_build_test/.github/workflows/prepare-manifest.yml@tii/development-test
+    uses: amalx-ssrc/tii_sel4_build_test/.github/workflows/pr.yml@tii/dev-manifest
     with: 
       branch: ${{ github.head_ref }}
     secrets:
